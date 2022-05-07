@@ -30,5 +30,18 @@ Now we can run java n number of times.
 
 
 Installing IntelliJ Idea:
-
 IntelliJ Idea Community 
+
+download the community version from below link
+https://www.jetbrains.com/idea/download/
+
+Download .exe and install
+
+
+Installation prompt opens and click next select location for install.
+click Run to open or open from desktop shortcut.
+
+All required plugins will be installed automatically.
+
+Click New Project and give name.
+Select Class and create a new class under a project
