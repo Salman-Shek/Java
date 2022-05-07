@@ -99,7 +99,7 @@ scanner.close();
 we can add numbers to variable but it cannot start with number
 grosspay1
 pay$
-- is not allowed
+   '-' is not allowed
 -----------------
 Chapter 3a : If Statements
 
