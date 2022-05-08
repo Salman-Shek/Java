@@ -219,3 +219,99 @@ Logical operators
 || OR	: at least one condition must be true
 ! NOT 	: condition must be false
 
+ //Way to make the decimal print with only 2 decimal places
+ String.format("%.2f", amountShort)
+ 
+ --------------------
+ chapter 4a: while loop
+ Repetition structures
+ 
+Loops are structures that cause a block of code to repeat.
+
+Sentinel -> condition controls the loop
+
+chpater 4b: do while
+boolean again =false;   ->Sentinel
+do{
+} while();
+
+while and do-while are condtition controleed loops.
+
+chapter 4c: For loop
+iterates for certain number of times
+for (int i=0;i<quantity;i++)
+{
+}
+
+lenth() -> gives the lenth of string
+charAt(i)-> gives the charcter at perticular position
+
+For loop is count controlled loop.
+
+Chapter 4d: Nested Loop
+Sometimes your repetitive tasks also contain repetitive sub-tasks. In the case, you need a loop inside of a loop.
+
+-------------------
+chapter 5a: Methods
+
+Methods are used to break complex problem into small managable pecieces
+functions, modules - in java its methods
+main() is also method
+scanner() to input data
+System() used to output data
+
+parts of method
+
+header
+
+first word in header is
+access modifier<public,private,protected> - who is allowed to access the code
+if not specified can be access by classes within package.
+
+second word in header is
+non-access modifier (static,final,abstract,synchronized)
+not every method requires one of these modifiers
+
+third word in header is
+return type - the data type this method will return back to the caller.
+void - not going to return any value
+method can only return 1 value.
+
+fourth word in header is 
+name - every method should have name. begin with verb and knowns follow (calculateSum)
+should begin with lowercase
+
+next is set of paranthesis
+() can be empty if method needs no external data
+used to hold list of all the data that should be supply to the method
+, delimited input
+
+signature - name and parameters
+
+method body {}
+contains zero or more statements.
+
+if return type is anything other than void then we need return inside body
+
+public static void main()
+{
+ String name = scanner.next();
+ greetUser(name);
+ }
+ public static void greetUser(String name)
+ {
+  system.out.println(name);
+  }
+----------
+chapter 5b: Variabl Scope
+variables defined within method are local variables
+variables defined outside method and inside class are called global variables
+
+the scope of methods parameter is anywhere withing the method
+methods will return only 1 value.
+we are not required to recieve returned value from calling method.
+Arguments and their corresponding parameters may or may not have the exact same name.
+A calling method’s argument list must be in the exact same order as the receiving method’s parameter list.
+--------------
+chapter 6a:
+java is a object oriented programming language.
