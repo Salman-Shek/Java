@@ -26,7 +26,7 @@ public class GradeMessage {
                 message="Great job";
                 break;
             case "C":
-                message="Goog job";
+                message="Good job";
                 break;
             case "D":
                 message="You need to work a bit harder";

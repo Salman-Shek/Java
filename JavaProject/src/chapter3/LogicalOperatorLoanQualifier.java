@@ -31,7 +31,7 @@ public class LogicalOperatorLoanQualifier {
         else
         {
             System.out.println("Sorry,You must earn salary $"
-                    + requiredSalary +" and "+requiredYearsEmployed+" years at current emplyer to qualify for loan");
+                    + requiredSalary +" and "+requiredYearsEmployed+" years at current employer to qualify for loan");
         }
     }
 

@@ -15,8 +15,8 @@ public class HomeAreaCalculatorRedo {
         calculator.scanner.close();
         System.out.println("Total Area is "+ area);
     }
-    public Rectangle getRoom(){
-
+    public Rectangle getRoom()
+        {
         System.out.println("Enter the length of your room: ");
         double length = scanner.nextDouble();
 

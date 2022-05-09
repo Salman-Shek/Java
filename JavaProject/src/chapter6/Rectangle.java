@@ -1,8 +1,8 @@
 package chapter6;
 
 public class Rectangle {
-    double length;
-    double width;
+    private double length;
+    private double width;
 
     //default Constructors
     public Rectangle(){

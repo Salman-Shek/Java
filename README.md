@@ -14,7 +14,7 @@ Check Version:
 java -version
 
 Now we are able to run the Java - only for that perticular session.
-If cmd promt is closed we need to set the path again.
+If cmd prompt is closed we need to set the path again.
 
 By Setting the environment variable we can run java permanentaly.
 
@@ -66,7 +66,7 @@ package, public, class are reserved words in java. There is something defined fo
 
 method will be created inside class.
 in order to run any code within a class it must be inside method.
-public staic void main(String arg[]) - default method in java.
+public static void main(String arg[]) - default method in java.
 
 when we execute it looks for main method. startring point of code.
 
@@ -107,7 +107,7 @@ Desicion structers
 The if statement : If a certain situation occurs, do something and then go back to the main flow.
 /* anything inside this is comment 
 */
-Any values is given in problem statement  then initailize the know values by assining varaibles
+Any values given in problem statement  then initailize the known values by assining varaibles.
 
 if(condition need to evaluate) must result to boolean true/false, 1/0
 {
@@ -163,16 +163,16 @@ if(score < 70)
         {
             grade ='D';
         }
-        else if(score <80)
+else if(score <80)
         {
             grade='C';
         }
-        else if(score < 90)
+else if(score < 90)
         {
             grade ='B';
         }
-		else
-			garde = A
+else
+		grade = A;
 -------------------
 chapter 3e: Switch statements
 If situation A occurs, do something.
@@ -227,16 +227,19 @@ Logical operators
  Repetition structures
  
 Loops are structures that cause a block of code to repeat.
-
+while(condtion>1)
+{
+	condtion = 0;		-> sentinel
+}
 Sentinel -> condition controls the loop
-
+----------------------
 chpater 4b: do while
 boolean again =false;   ->Sentinel
 do{
 } while();
 
-while and do-while are condtition controleed loops.
-
+while and do-while are conditionion controlled loops.
+--------------------
 chapter 4c: For loop
 iterates for certain number of times
 for (int i=0;i<quantity;i++)
@@ -247,7 +250,7 @@ lenth() -> gives the lenth of string
 charAt(i)-> gives the charcter at perticular position
 
 For loop is count controlled loop.
-
+---------------------
 Chapter 4d: Nested Loop
 Sometimes your repetitive tasks also contain repetitive sub-tasks. In the case, you need a loop inside of a loop.
 
@@ -303,11 +306,11 @@ public static void main()
   system.out.println(name);
   }
 ----------
-chapter 5b: Variabl Scope
+chapter 5b: Variable Scope
 variables defined within method are local variables
 variables defined outside method and inside class are called global variables
 
-the scope of methods parameter is anywhere withing the method
+the scope of method parameter is anywhere within the method
 methods will return only 1 value.
 we are not required to recieve returned value from calling method.
 Arguments and their corresponding parameters may or may not have the exact same name.
@@ -376,7 +379,8 @@ For classes that are not within the same package, you have to import them.
 
 Static Non-Access Modifier
 
-Static is used for members of a class which can be accessed without using an instance of the class to do so. Because it’s not associated with an instantiation, these members have no state.
+Static is used for members of a class which can be accessed without using an instance of the class to do so. Because it’s not associated with an instantiation, 
+these members have no state.
 we've created an instance of the very class that we were in, just so that we could get the things that are not static within this class.
 
 Classes that exist outside of the package in which they are being used must be imported.
@@ -397,6 +401,7 @@ chapter 7a : Arrays
 Arrays are special objects or containers which can hold multiple values.
 
 int[] lottoTicket = new int[6];
+int lottoTicket[] = new int[6];
 
 int - the first part is the data type that the array holds and while the array is capable of holding multiple values, all values must be of the same data type
 
@@ -410,7 +415,8 @@ new - and then we use the new keyword
 
 int - followed by the data type again
 
-[6] - followed by a number inside of the brackets. This number inside of the brackets represents the length of the array, meaning how many values can this array store. Once the length is declared, it's fixed — meaning it cannot be lengthened to hold more values.
+[6] - followed by a number inside of the brackets. This number inside of the brackets represents the length of the array, meaning how many values can this array store. Once the length is declared, 
+it's fixed — meaning it cannot be lengthened to hold more values.
 
 using contant variable
 private static final int LENGTH = 6 - declare gloabal variable

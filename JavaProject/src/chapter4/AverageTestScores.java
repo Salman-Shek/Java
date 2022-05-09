@@ -17,7 +17,7 @@ public class AverageTestScores {
             double total =0;
             for(int j=0;j<numberOfTests;j++)
             {
-                System.out.println("Enter the score for test #"+ (j+1));
+                System.out.println("Enter the score for test #"+ (j+1) +" of Student " +(i+1));
                 double score = scanner.nextDouble();
                 total =total+score;
             }
