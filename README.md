@@ -313,5 +313,105 @@ we are not required to recieve returned value from calling method.
 Arguments and their corresponding parameters may or may not have the exact same name.
 A calling method’s argument list must be in the exact same order as the receiving method’s parameter list.
 --------------
-chapter 6a:
+chapter 6a: Classes and Objects
 java is a object oriented programming language.
+Objects are structures which contain data in the form of fields and methods.
+
+Components of Class - fields and methods
+
+1. Getter and Setter Methods:
+One is to provide getter and setter methods for each of the fields.
+double getWidth(){
+    return width;
+}
+
+void setWidth(double width){
+    this.width = width;
+}
+
+The this keyword refers to this class.
+
+2. Constructors:
+All objects have a constructor.
+The very first type of constructor is the default constructor.
+public Rectangle(){
+    length = 0;
+    width = 0;
+}
+The default constructor is known as such because it does not have a parameter list
+
+The constructor's name must be the exact same name as the class.
+Constructors start with an access modifier, so we'll say public.
+there's no return type, because they're not a method, even though they kind of act like one
+Constructors are used to initialize an object, or set up its state in some way
+
+You can have however many constructors you want. All of their names must be exactly as the class name. What differs is the parameters that they accept.
+
+Another thing about classes is that they should practice encapsulation.
+
+Encapsulation is one of the key principles of object-oriented programming. 
+It specifies that the data (fields) of a class should be private and 
+the methods (behaviour) of the class can be exposed (public) to other classes to use.
+
+No other code outside of this class can access things that are marked as private.
+with no access modifier, only classes within the same package (chapter6) can access these methods.
+public - can be accessed outside the package
+protected - it means that other classes within this same package can access it. It's similar to having no access modifier at all.
+
+--------------
+chapter 6b : instantiating object
+
+Rectangle room1 = new Rectangle();
+datatype object = new default constructor; or another constructor with parameters
+
+we can give class types as data type.
+To create an instantiation or an instance of an object we use the key word new, followed by the constructor of the class we are creating object of.
+room1 (this is the object), and access the object’s methods using the dot operator (.).
+----------
+chapter 6c: Objects as method parameters and return type
+
+primitive data type this means things like the int and the char.
+However, we can use objects as the arguments for methods, as well.
+For classes that are not within the same package, you have to import them.
+
+Static Non-Access Modifier
+
+Static is used for members of a class which can be accessed without using an instance of the class to do so. Because it’s not associated with an instantiation, these members have no state.
+we've created an instance of the very class that we were in, just so that we could get the things that are not static within this class.
+
+Classes that exist outside of the package in which they are being used must be imported.
+For a static method to be able to call a non-static method, it must do so by Using an object of the type in which the non-static method belongs
+Static global fields can be accessed by non-static methods of the same class
+
+In Java, default constructors exist in classes with no constructors, even if not explicitly defined.
+
+--------------------
+chapter 6d : Overloading methods within a class
+
+Overloading Methods
+
+Within a class, you can have multiple methods that have the same name but different signatures. And this is known as overloading.
+------------------------
+chapter 7a : Arrays
+
+Arrays are special objects or containers which can hold multiple values.
+
+int[] lottoTicket = new int[6];
+
+int - the first part is the data type that the array holds and while the array is capable of holding multiple values, all values must be of the same data type
+
+[] - the square brackets indicate that this is not just an int data type, but this will be an array of “ints”. The bracket can appear after the data type or after the variable name itself
+
+lottoTicket - speaking of name, that's the next part of the declaration. We name arrays just as we would any other variable
+
+= - the name is followed by an equal sign
+
+new - and then we use the new keyword
+
+int - followed by the data type again
+
+[6] - followed by a number inside of the brackets. This number inside of the brackets represents the length of the array, meaning how many values can this array store. Once the length is declared, it's fixed — meaning it cannot be lengthened to hold more values.
+
+using contant variable
+private static final int LENGTH = 6 - declare gloabal variable
+int[] lotteryNumb = new int[LENGTH]
