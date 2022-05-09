@@ -421,3 +421,45 @@ it's fixed — meaning it cannot be lengthened to hold more values.
 using contant variable
 private static final int LENGTH = 6 - declare gloabal variable
 int[] lotteryNumb = new int[LENGTH]
+
+----------------------
+chapter 9a: Inheritance
+Java is an Objected Oriented Programing Language.
+we use the paradigm of objects to represent a concept, and to hold state and behavior.
+
+There are 4 major Principles of OOPS are EIPA
+Encapsulation 	: in a class variable to be private and methods to be public.
+Inheritance		: Inheritance is where one class becomes an extension of another class, therefore inheriting the members of that class.
+Polymorphism
+Abstraction
+
+Inheritance 
+2 parties : Parent and child
+Parent class - Supercalss - base class
+Child class- subclass - derived class
+
+public class Person{
+	private String name;
+    private int age;
+    private String gender;
+	
+	//getter and setter
+}
+public class Employee extends Person{
+	private String employeeId;
+    private String title;
+}
+
+Person is Super class and Employee is subclass
+
+chapter 9b:
+by default The supercalss constructor is called first before subclass.
+
+to call a specific constructor of class use super()
+
+super() -> calls the default constructor
+super(name) -> if we want to call other then give parameter as defined.
+it should be the first line of the subclass constructor.
+
+if you defined a constructor then the default constructor is no longer available if its not explicitly defined.
+
