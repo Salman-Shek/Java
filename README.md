@@ -324,11 +324,11 @@ Components of Class - fields and methods
 
 1. Getter and Setter Methods:
 One is to provide getter and setter methods for each of the fields.
-double getWidth(){
+public double getWidth(){
     return width;
 }
 
-void setWidth(double width){
+public void setWidth(double width){
     this.width = width;
 }
 
@@ -430,8 +430,8 @@ we use the paradigm of objects to represent a concept, and to hold state and beh
 There are 4 major Principles of OOPS are EIPA
 Encapsulation 	: in a class variable to be private and methods to be public.
 Inheritance		: Inheritance is where one class becomes an extension of another class, therefore inheriting the members of that class.
-Polymorphism
-Abstraction
+Polymorphism	: Polymorphism is the ability to take multiple forms
+Abstraction		: Abstraction is defined as something that exists in theory but does not have a concrete existence
 
 Inheritance 
 2 parties : Parent and child
@@ -455,7 +455,7 @@ Person is Super class and Employee is subclass
 chapter 9b:
 by default The supercalss constructor is called first before subclass.
 
-to call a specific constructor of class use super()
+to call a specific constructor of superclass use super()
 
 super() -> calls the default constructor
 super(name) -> if we want to call other then give parameter as defined.
@@ -463,3 +463,97 @@ it should be the first line of the subclass constructor.
 
 if you defined a constructor then the default constructor is no longer available if its not explicitly defined.
 
+Overriding and overloading:
+Subclass inherits the member of its parent.
+if we need to change the functionality of method . overriding method.
+
+So, this is how you override a method — use the exact same signature but change the body.
+
+Override Annotation
+
+It's encouraged that you use the override annotation, which is the @ symbol followed by the word Override — @Override. This is not required, but it's strongly encouraged. 
+This lets Java know that your intention is to override the method that you inherited from your super class.
+
+Overloading Inherited Methods:
+Overloading methods is when you have multiple methods with the exact same name but with different parameter lists.
+When dealing with a subclass, we can overload a method that we have inherited from a superclass, even though that method lives in another class.
+
+When we use overloaded method in subclass we get access to both supercalss method and subclass method.
+but super class gets access to only its method.
+
+Cunstructors are not members of class so they cannot be inherited. but the parent constructor can be used using super() funtion;
+public and protected method, fields in a super class are inherted by its subclass.
+private method and fields are not inherited.
+final methods are inherited but cannot be overidden.
+
+public in super to protected not allowed
+protected in super to public in subclass allowed.
+
+All classes in Java, whether provided by the language or created by you, inherit from the Object class
+-----------------------------------
+Chapter 10 : Polymorphism
+Polymorphism is the ability to take multiple forms. Specifically, in object-oriented programming, 
+polymorphism is where a subclass can define their own unique behaviors, and yet share some of the same behaviors of their superclass.
+
+An example of polymorphism is where an object has a superclass type but is an instance of a subclass.
+Animal sasha = new Dog();
+sasha = new Cat();
+Because they are both of type Animal, and since I've specified sasha as type Animal, then this is legal.
+
+Type Casting
+Casting is the act of converting an object’s type into a different type.
+
+((Cat) sasha).scratch(); to call a method of Cat class then it needs to be type casted.
+
+
+if(animal instanceof Dog) returns boolean
+------------------------------------
+chapter 11a: Abstraction
+Abstraction is defined as something that exists in theory but does not have a concrete existence
+
+we have reserved word abstarct which is non-access modifier can be used in class and methods.
+
+public abstract class Shape{
+ abstract double calculateArea();
+ }
+when we want to define template but not using as is.
+An abstract method has no body, only the signature of the method is defined
+An abstract class doesn't only have to contain abstract methods
+
+we cannot instantiate abstract class as they are template. we can use it as type.
+
+Given a class contains an abstract method. The class itself must be abstract.
+-----------------------
+Chapter 11b: interfaces
+An interface is similar to an abstract class, except that in an abstract class there can be some methods that are implemented.
+interface consists of all abstract methods. Because all of the methods of an interface are abstract by nature, there's no need to declare the methods as abstract. It's just a given.
+
+public inteface Product{			-- interface 
+}
+
+public class Book implements Product{
+}
+
+class specify that it will implement multiple interfaces
+By providing the list of names of the interfaces, separated by commas, within the class header
+If a class indicates that it will implement multiple interfaces, then it must provide implementation for all abstract methods of those interfaces.
+
+chapter : collections
+A Collection is an object that holds references to other objects. These are data structures and the objects within the collection are known as elements.
+
+Set : unorder collection of unique objects, HashSet()
+List : ArrayList(); ordered. index start at 0., can be duplicated. it prints in order we entered.
+Queue : LinkedList(); items are ordered, can be duplcate, first in first out.
+Map : HashMap(), treemap(); maps unique keys to values
+
+
+try{
+}
+catch(Exception1 | Exception2 e)
+{
+e.printStackTrace();
+}
+finally			-- if or no exception
+{
+scanner.close();
+}
